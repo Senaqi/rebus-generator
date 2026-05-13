@@ -101,7 +101,7 @@ body {
 
 .action-panel {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 15px;
     padding: 20px 30px;
@@ -194,4 +194,52 @@ body {
     height: 100%;
     object-fit: cover;
     opacity: 0.75;
+}
+
+
+/* АДАПТИВНІСТЬ */
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .app-wrapper {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .control-panel {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .difficulty-group {
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+    #generate-btn {
+        width: 100%;
+        max-width: 200px;
+        margin: 0;
+    }
+    .action-panel {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 500px) {
+    #reset-btn {
+        flex: 0 0 auto;
+    }
+    #hint-btn {
+        flex: 1 1 auto;
+        width: auto;
+    }
+    #check-btn {
+        flex: 0 0 100%;
+        width: 100%;
+    }
 }
