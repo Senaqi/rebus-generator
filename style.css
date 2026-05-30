@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+::selection {
+    background-color: #C30E60;
+    color: #fff;
 }
 
 body {
@@ -14,7 +19,8 @@ body {
 .app-wrapper {
     background-color: #fff;
     width: 100%;
-    max-width: 900px;
+    max-width: 746px;
+    min-height: 446px;
     border: 1px solid #e0e0e0;
 }
 
@@ -62,7 +68,7 @@ body {
 }
 
 .primary-btn {
-    background-color: #1967d2;
+    background-color: #4A90E2;
     color: #fff;
     border: none;
     border-radius: 20px;
@@ -91,10 +97,9 @@ body {
 }
 
 .rebus-container {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
     font-weight: bold;
-    color: #008ecc;
+    color: #4A90E2;
     text-align: right;
     letter-spacing: 5px;
 }
@@ -136,13 +141,13 @@ body {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    color: #008ecc;
+    color: #4A90E2;
     margin: 0 2px;
 }
 
 .rebus-input {
     border: none;
-    border-bottom: 2px dashed #008ecc;
+    border-bottom: 2px dashed #4A90E2;
     background-color: transparent;
     padding: 0;
     outline: none;
@@ -151,7 +156,7 @@ body {
 
 .rebus-input:focus {
     background-color: #e6f7ff;
-    border-bottom: 2px solid #008ecc;
+    border-bottom: 2px solid #4A90E2;
 }
 
 .rebus-input::placeholder {
@@ -163,7 +168,7 @@ body {
 }
 
 .bordered-line {
-    border-bottom: 2px solid #008ecc;
+    border-bottom: 2px solid #4A90E2;
     margin-bottom: 5px;
     padding-bottom: 5px;
 }
