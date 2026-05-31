@@ -1,5 +1,3 @@
-import { generateUniqueRebus } from './math-core.js?v=2';
-
 document.addEventListener('DOMContentLoaded', () => {
     const generateBtn = document.getElementById('generate-btn');
     const difficultyRadios = document.getElementsByName('difficulty');

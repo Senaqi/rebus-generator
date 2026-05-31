@@ -1,8 +1,8 @@
-export function getRandomInt(min, max) {
+function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-export function generateBasicExample(level) {
+function generateBasicExample(level) {
     const allowedSizes = {
         easy: [[3, 1], [1, 3], [2, 2]],
         medium: [[3, 2], [2, 3], [3, 3]],
@@ -47,7 +47,7 @@ export function generateBasicExample(level) {
 }
 
 // Алгоритм 2.3: Зонове приховування цифр. Гарантує рівномірний розподіл зірочок між множниками, частковими добутками та результатом
-export function hideDigits(structure, level) {
+function hideDigits(structure, level) {
     let minPercent = level === 'easy' ? 0.30 : (level === 'medium' ? 0.40 : 0.55);
     let maxPercent = level === 'easy' ? 0.40 : (level === 'medium' ? 0.55 : 0.70);
     const targetPercent = Math.random() * (maxPercent - minPercent) + minPercent;
@@ -274,7 +274,7 @@ function checkComplexity(stats, level) {
 }
 
 // Алгоритм 2.9: Повний цикл генерації ребусу (з гарантованою видачею результату)
-export function generateUniqueRebus(level) {
+function generateUniqueRebus(level) {
     const maxAttempts = 150;
 
     let fallbackRebus = null; // "Карман" для запасного варіанту
